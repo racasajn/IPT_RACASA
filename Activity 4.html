@@ -1,68 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Activities</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a8e063, #56ab2f, #0082c8);
+            color: white;
+        }
 
+        .container {
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .introduction {
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .sections {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sections div {
+            margin: 20px 0;
+        }
+
+        .sections div span {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #ffff99;
+        }
+
+        .profile-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid white;
+        }
+    </style>
 </head>
 <body>
-  <div class="calculator">
-    <h1>MDAS Calculator</h1>
-    <label for="num1">Enter Number 1:</label>
-    <input type="number" id="num1">
-    <p> * </p>
-    <label for="num2">Enter Number 2:</label>
-    <input type="number" id="num2">
-    <p> / </p>
-    <label for="num3">Enter Number 3:</label>
-    <input type="number" id="num3">
-    <p> + </p>
-    <label for="num4">Enter Number 4:</label>
-    <input type="number" id="num4">
-    <p> - </p>
-    <label for="num5">Enter Number 5:</label>
-    <input type="number" id="num5">
-    <button onclick="calculate()">Calculate</button>
-    <p id="result"></p>
-  </div>
-
-  <script>
-    function calculate() {
-      let num1 = parseFloat(document.getElementById("num1").value);
-      let num2 = parseFloat(document.getElementById("num2").value);
-      let num3 = parseFloat(document.getElementById("num3").value);
-      let num4 = parseFloat(document.getElementById("num4").value);
-      let num5 = parseFloat(document.getElementById("num5").value);
-
-      let result = num1;
-      result = result * num2;
-      result = result / num3;
-      result = result + num4;
-      result = result - num5;
-
-      document.getElementById("result").innerHTML = "Result: " + result;
-    }
-  </script>
-
-<h1>Font Size Increase and Decrease</h1>
-  <div class="container">
-    <p id="myParagraph">This is a paragraph with adjustable font size.</p>
-
-    <button onclick="increaseFontSize()">Increase Font Size</button>
-    <button onclick="decreaseFontSize()">Decrease Font Size</button>
-  </div>
-
-  <script>
-    let fontSize = 16;
-
-    function increaseFontSize() {
-      fontSize += 2;
-      document.getElementById("myParagraph").style.fontSize = fontSize + "px";
-    }
-
-    function decreaseFontSize() {
-      fontSize -= 2;
-      document.getElementById("myParagraph").style.fontSize = fontSize + "px";
-    }
-  </script>
+    <div class="container">
+        <h1>MY PORTFOLIO</h1>
+        <div class="introduction">
+            Hello! Mabuhay! I am Jude Noel Racasa, a 3rd year BSIT student. Feel free to view this webpage I created.
+        </div>
+        <div class="profile-image">
+            <img src="RACASA_JUDE NOEL.png" alt="Profile Image">
+        </div>
+        <div class="sections">
+            <div>
+                <span>My Profile</span> This section will show you all informations about me.
+            </div>
+            <div>
+                <span>Skills</span> This section will provide you my skills and abilities that I possess.
+            </div>
+            <div>
+                <span>Achievements</span> This section will show you my past and recent achievements I obtained with the help of my skills.
+            </div>
+            <div>
+                <span>Contact</span> This section will provide you on how and where can you contact me.
+            </div>
+        </div>
+    </div>
 </body>
 </html>
